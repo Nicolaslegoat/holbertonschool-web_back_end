@@ -22,4 +22,3 @@ def measure_time(n: int, max_delay: int) -> float:
     best_time = total_time / n
 
     return best_time
-    
