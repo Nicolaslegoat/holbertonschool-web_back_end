@@ -3,7 +3,7 @@
 
 
 def schools_by_topic(mongo_collection, topic):
-    """unction that returns the list of school having a specific topic"""
-    mongo_collection.find(
+    """function that returns the list of school having a specific topic"""
+    return mongo_collection.find(
         {"topic": topic}
     )
