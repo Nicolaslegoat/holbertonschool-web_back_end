@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""Paganing Database"""
 import csv
 import math
 from typing import List
@@ -27,12 +27,13 @@ class Server:
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """that takes two integer arguments page with default value 1
         and page_size with default value 10.
-        - assert to verify that both arguments are integers greater than 0.
-        - index_range to find the correct indexes to paginate the dataset correctly
-        and return the appropriate page of the dataset (i.e. the correct list of rows)."""
-        assert type(page)  is int and type(page_size) is int
+        - assert to verify that both arguments are integers great than 0
+        - index_range to find the correct indexes to paginate
+        the dataset correctly and return the appropriate page
+        of the dataset (i.e. the correct list of rows)."""
+        assert type(page) is int and type(page_size) is int
         assert page > 0 and page_size > 0
-        
+
         index_page: tuple = index_range(page, page_size)
         dataset: List = self.dataset()
 
