@@ -1,7 +1,7 @@
 /* eslint-disable */
-import ClassRoom from '0-classroom.js';
+import ClassRoom from './0-classroom.js';
 
-export default IntializeRooms {
+export default function IntializeRooms {
     const array= [
     new ClassRoom(19),
     new ClassRoom(20),
