@@ -10,24 +10,24 @@ export default class HolbertonCourse {
       return this._name;
     }
   
-    set name(new_name) {
-      this._name = HolbertonCourse.validateString(new_name, 'Name');
+    set name(newName) {
+      this._name = HolbertonCourse.validateString(newName, 'Name');
     }
   
     get length() {
       return this._length;
     }
   
-    set length(new_length) {
-      this._length = HolbertonCourse.validateNumber(new_length, 'Length');
+    set length(newLength) {
+      this._length = HolbertonCourse.validateNumber(newLength, 'Length');
     }
   
     get students() {
       return this._students;
     }
   
-    set students(new_students) {
-      this._students = HolbertonCourse.validateArray(new_students, 'Students');
+    set students(newStudents) {
+      this._students = HolbertonCourse.validateArray(newStudents, 'Students');
     }
   
     static validateString(value, propertyName) {
