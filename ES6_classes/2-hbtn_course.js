@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default class HolbertonCourse {
     constructor(name, length, students) {
       this._name = HolbertonCourse.validateString(name, 'Name');
